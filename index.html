@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+   
+    <div id="startscreen">
+        <h1>VIDEO GAME</h1>
+        <br/><br/> 
+        <button id="startscreenbtn">START GAME</button>   
+        <br/><br/><br/><br/>    
+        <button id="loadscreenbtn">LOAD GAME</button>    
+    </div>
+
+
+    <div id="charactercreation" style="display:none">
+        <!--CHARACTER CREATION SCREEN-->
+        <h1>VIDEO GAME</h1>
+
+        <p>CREATE YOUR CHARACTER</p>     
+
+        <br/>
+        <p>Playername: <input type="text" id="playernameinput"></p>
+        <p>Class: <button class="classbtn" id="chooseclassbtn">None</button></p>
+        <p>Race: <button class="racebtn" id="chooseracebtn">None</button></p>
+        <p><button class="racebtn" id="startadvancebtn">ADVANCE</button></p>
+
+    </div>
+
+
+    <div id="classdiv" style="display:none">
+        <!--CLASS SCREEN-->
+        <h1>SELECT YOUR CLASS</h1>
+
+        <p><button class="classbtn" id="choosewarriorbtn">WARRIOR</button></p>         
+        <p><button class="classbtn" id="choosesorcererbtn">SORCERER</button></p>
+        <p><button class="classbtn" id="choosecharexit">Back</button></p>    
+
+    </div>
+
+    <div id="racediv" style="display:none">
+        <!--RACE SCREEN-->
+        <h1>SELECT YOUR CLASS</h1>
+
+        <p><button class="racebtn" id="chooseelfbtn">ELF</button></p> 
+        <p><button class="racebtn" id="choosehumanbtn">HUMAN</button></p>
+        <p><button class="racebtn" id="chooseraceexit">Back</button></p>    
+
+    </div>
+
+
+
+    <div id="gamescreen" style="display:none">
+        <!--GAME SCREEN-->
+          
+        <div id="gamebar">
+            <!--TITLE SCREEN-->
+            <button id="gamebarcharscreenbtn">CHARACTER</button><button id="gamebarjournalbtn">JOURNAL</button><button id="gamebarmapbtn">MAP</button><button id="gamebarexit">EXIT</button> 
+        </div>
+
+        <div id="gamearea">
+            
+        </div>
+
+        <div id="textarea">
+            <button id="advancedialogbtn">ADVANCE</button>
+            <p id="gamescreentextarea"><p></p>
+            <button id="advancedialogbtn">1: YES</button>
+            <button id="advancedialogbtn">2: NO</button>
+            
+        </div>
+        
+    
+    </div>
+
+
+
+    
+
+
+    <script src="game.js"></script>
+    
+</body>
+</html>
